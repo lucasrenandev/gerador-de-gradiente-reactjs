@@ -1,0 +1,153 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 0 12%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.colors {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.colors input {
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.left-side h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.directions {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.directions i {
+  font-size: 31px;
+  cursor: pointer;
+}
+
+.directions i.active {
+  color: #0f0;
+}
+
+button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 8px 18px;
+  background-color: #0084ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0084ff;
+  text-shadow: 0 0 5px #000;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  width: 470px;
+  max-width: 100%;
+  height: 90px;
+  background-color: #fff;
+  resize: none;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#btn-copy {
+  position: relative;
+}
+
+#btn-copy::before {
+  content: 'Copiado';
+  position: absolute;
+  left: 25px;
+  top: -42px;
+  background-color: #06c200;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 6px 8px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  z-index: 100;
+  display: none;
+}
+
+#btn-copy::after {
+  content: '';
+  position: absolute;
+  top: -23px;
+  right: 21px;
+  width: 13px;
+  height: 13px;
+  background-color: #06c200;
+  transform: rotate(45deg);
+  z-index: 99;
+  display: none;
+}
+
+#btn-copy.message::before, #btn-copy.message::after {
+  display: block;
+}
