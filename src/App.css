@@ -5,7 +5,7 @@ header {
   right: 0;
   width: 100%;
   text-align: center;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
 }
 
 header h1 {
@@ -20,7 +20,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  padding: 0 12%;
+  padding: 0 10%;
 }
 
 .left-side {
@@ -90,7 +90,6 @@ button {
   letter-spacing: 1px;
   cursor: pointer;
   box-shadow: 0 0 10px #0084ff;
-  text-shadow: 0 0 5px #000;
 }
 
 .right-side {
@@ -139,7 +138,7 @@ textarea {
   content: '';
   position: absolute;
   top: -23px;
-  right: 21px;
+  right: 23px;
   width: 13px;
   height: 13px;
   background-color: #06c200;
